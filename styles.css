@@ -9,6 +9,7 @@
 :root {
   --primary-color: #48556a;
   --secondary-color: #979797;
+  --bg-color: #ecf2f8;
 
   --text-color: #6e8098;
   --dark-color: #48556a;
@@ -18,7 +19,7 @@
 
 body {
   font-family: "Manrope", sans-serif;
-  background-color: #f2f2f2;
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,14 +40,15 @@ body {
   max-width: 730px;
   background-color: #fff;
   border-radius: 10px;
-  flex-wrap: wrap;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
 }
 
-.card > * {
-  flex: 1;
+.card__image {
+  flex-grow: 1;
 }
 
 .card__content {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
